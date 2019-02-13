@@ -20,13 +20,13 @@ public class descsortTest {
     public void sortf() {
         descsort ob = new descsort();
         String expectedValue= "False";
-        String actualValue = ob.sort("5467");
+        String actualValue = ob.sort("5468697");
         assertEquals(expectedValue,actualValue);
     }
     @Test
     public void sortt() {
         descsort ob = new descsort();
-        String expectedValue= "Sum of even numbers:19";
+        String expectedValue= " Sum of even numbers:12";
         String actualValue = ob.sort("546798");
         assertEquals(expectedValue,actualValue);
     }

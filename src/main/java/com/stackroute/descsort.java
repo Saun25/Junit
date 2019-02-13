@@ -13,15 +13,17 @@ import java.util.Arrays;
             len--;
         }
         Arrays.sort(arr);
-        for(int i=0;i<count;i++,count--) {
+        for(int i=0;i<count;i++) {
             int temp = arr[i];
             arr[i] = arr[count - 1];
             arr[count - 1] = temp;
+            count--;
         }
-        int j=str.length();
+        int j=str.length()-1;
         while(j>0){
             if(j%2==0)
                 sum += arr[j];
+            j--;
         }
 
         if(sum>15)     
